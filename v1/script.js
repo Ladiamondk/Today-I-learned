@@ -58,10 +58,7 @@ loadFacts();
 
 async function loadFacts(){
     const res = await fetch("https://tpenyzhfbkjpqfqnfoby.supabase.co/rest/v1/Facts", {
-        headers: {
-            apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRwZW55emhmYmtqcHFmcW5mb2J5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODIwMjUxOTIsImV4cCI6MTk5NzYwMTE5Mn0.sUY9hQb8PN8ISP-WSiLjRbTT2N55zoxps2TXrMM62Mw",
-            authorizatioin: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRwZW55emhmYmtqcHFmcW5mb2J5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODIwMjUxOTIsImV4cCI6MTk5NzYwMTE5Mn0.sUY9hQb8PN8ISP-WSiLjRbTT2N55zoxps2TXrMM62Mw",
-        }
+        
     }
 );
     const data = await res.json();
